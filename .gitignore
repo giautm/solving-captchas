@@ -1,3 +1,4 @@
 generated_captcha_images/**/*
 extracted_letter_images/**/*
 .DS_Store
+__pycache__/*
