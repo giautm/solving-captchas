@@ -36,7 +36,7 @@ for (i, captcha_image_file) in enumerate(captcha_image_files):
     contours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     # Hack for compatibility with different OpenCV versions
-    contours = contours[0] if imutils.is_cv2() else contours[1]
+    contours = contours[1] if imutils.is_cv3() else contours[0]
 
     letter_image_regions = []
 
